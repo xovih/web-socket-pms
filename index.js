@@ -2,7 +2,7 @@ import dotenv from "dotenv"
 import { Server } from "socket.io";
 
 dotenv.config()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4502
 
 const whiteList = ['http://192.168.197.234:4201', 'http://192.168.196.196:4203', 'http://pms-mu.pindad.co.id']
 const corsOptions = {
