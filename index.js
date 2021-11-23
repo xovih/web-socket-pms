@@ -4,7 +4,14 @@ import { Server } from "socket.io";
 dotenv.config()
 const PORT = process.env.PORT || 4502
 
-const whiteList = ['http://192.168.197.234:4201', 'http://192.168.196.196:4203', 'http://pms-mu.pindad.co.id']
+const whiteList = [
+  'http://192.168.197.234:4201',
+  'http://192.168.196.196:4203',
+  'http://pms-mu.pindad.co.id',
+  'http://bn-pms.divmu.pindad.co.id',
+  'http://pms.divmu.pindad.co.id'
+]
+
 const corsOptions = {
   origin: function (origin, callback) {
     if (whiteList.indexOf(origin) !== -1) {
