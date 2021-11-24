@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 4502
 const whiteList = [
   'http://192.168.197.234:4201',
   'http://192.168.196.196:4203',
+  'http://192.168.206.179:4503',
   'http://pms-mu.pindad.co.id',
   'http://bn-pms.divmu.pindad.co.id',
   'http://pms.divmu.pindad.co.id'
